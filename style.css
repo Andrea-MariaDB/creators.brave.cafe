@@ -1,6 +1,7 @@
 body {
     color:#fff;
-    background:#000;
+    background: linear-gradient( rgb(0 0 0 / 42%) 100%, rgb(171 171 171 / 32%)100%),url(BATwall.png);
+    background-repeat: no-repeat;
     margin:1em auto;
     padding:1em;
     max-width:55em;
@@ -54,10 +55,12 @@ a:hover{
     color:#c6c;
 }
 .creator_list{
-    column-count:1; <!--Change to 2 when more creators added-->
+    column-count:auto; /*<!--Change to 2 when more creators added-->*/
+    column-width: 400px;
+    
 }
 @media (min-width: 900px) {
-    .creator_list{column-count:1;}
+    .creator_list{column-count:auto;}
 }
 .tooltip {
     position: relative;
@@ -73,3 +76,9 @@ a:hover{
     left: 105%;
 }
 .tooltip:hover .tooltiptext {visibility: visible;}
+
+.aboutLink{
+    text-shadow: 2px 2px rgb(22 239 118 / 42%);
+    font-style: italic;
+    font-weight: 900;
+}

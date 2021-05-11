@@ -6,6 +6,7 @@
 <meta name="keywords" content="Webring, Cryptocurrency, Brave, Creator, BAT, Basic Attention Token">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Brave Creator Webring</title>
+<script src="scripts.js"></script>
 <link rel='stylesheet' type='text/css' href='style.css'>
 </head>
 
@@ -14,6 +15,7 @@
 <header>
     <nav>
         <div id="logo"><a href="index.html"><img class="logo" src="logo_light.png"></a></div>
+        <div><a class="aboutLink" href="aboutUs.html">WHAT IS BRAVE WEBCIRCLE? </a></div>
         <ul class="menu">
             <li><a href="#" onclick="randomUrl();" target="_blank">Random Creator</a></li>
         </ul>
@@ -22,7 +24,7 @@
 
 <h1>Brave Creators</h1>
 <p>
-<ol class="creator_list" style="white-space:nowrap;">
+<ul class="creator_list" style="white-space:nowrap;">
     <li><div class="tooltip"><a href="https://brave.cafe/">Brave Cafe:</a> <span class="tooltiptext">Federated Brave community</span></div></li>
     <li><div class="tooltip"><a href="https://pbanks.net/">Parker Banks:</a> <span class="tooltiptext">Research and personal blog</span></div></li>
     <li><div class="tooltip"><a href="https://www.guilhermepantoja.com/">Guilherme Pantoja:</a> <span class="tooltiptext">Traditional, creative artwork</span></div></li>
@@ -33,7 +35,7 @@
     <li><div class="tooltip"><a href="https://twitter.com/andrei_pestee">Andrei Peste:</a> <span class="tooltiptext">Unique, morbid artwork</span></div></li>
     <li><div class="tooltip"><a href="https://3dprintguides.com/">3D Print Guides:</a> <span class="tooltiptext">3D printing code and tutorials</span></div></li>
     <li><div class="tooltip"><a href="https://limbo.center/">Limbo Central:</a> <span class="tooltiptext">Music, Computers, Internet<sup style="vertical-align: top;"> es</sup></span></div></li>
-</ol>
+</ul>
 </p>
 <br/>
 <hr/>
@@ -52,13 +54,6 @@ Copyright:&nbsp;&nbsp;&copy; 2021 Parker J. Banks<br/>
 License:&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
 </footer>
 
-<script src="creators.js"></script>
-<script>
-    function randomUrl() {
-        var randomNumber = Math.floor(Math.random() * urlArray.length);
-        var newUrl = urlArray[randomNumber];
-        window.location.href = newUrl;
-    }
-</script>
+
 </body>
 </html>
