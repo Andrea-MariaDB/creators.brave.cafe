@@ -13,16 +13,21 @@
 <body>
 
 <header>
-    <nav>
-        <div id="logo"><a href="index.html"><img class="logo" src="logo_light.png"></a></div>
-        <div><a class="aboutLink" href="aboutUs.html">WHAT IS BRAVE WEBCIRCLE? </a></div>
-        <ul class="menu">
-            <li><a href="#" onclick="randomUrl();" target="_blank">Random Creator</a></li>
-        </ul>
-    </nav>
+
+<nav>
+    <div id="logo"><a href="/index.html">Brave Cafe</a></div>
+    <div><a class="aboutLink" href="aboutUs.html">WHAT IS BRAVE WEBCIRCLE? </a></div>
+    <label for="drop" class="toggle">Menu</label>
+    <input type="checkbox" id="drop" />
+    <ul class="menu">
+        <li><a href="#">Join</a></li>
+        <li><a href="#" onclick="randomUrl();" target="_blank">Random Creator</a></li>
+        <li><a href="https://brave.cafe/"><img src="https://creators.brave.cafe/logo_light.png"></a></li>
+    </ul>
+</nav>
+<p id="slogan">A webring for Brave Creators.</p>
 </header>
 
-<h1>Brave Creators</h1>
 <p>
 <ul class="creator_list" style="white-space:nowrap;">
     <li><div class="tooltip"><a href="https://brave.cafe/">Brave Cafe:</a> <span class="tooltiptext">Federated Brave community</span></div></li>
@@ -54,6 +59,8 @@ Copyright:&nbsp;&nbsp;&copy; 2021 Parker J. Banks<br/>
 License:&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>
 </footer>
 
+
+<script src="creators.js"></script>
 
 </body>
 </html>
